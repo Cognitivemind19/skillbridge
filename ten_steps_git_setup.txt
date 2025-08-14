@@ -1,0 +1,67 @@
+*************************************************Within 10 minutes exactly in 10-12 steps we can setup git environment************************************************************
+
+Step 1: 
+Windows: Download from "git-scm.com" and install.
+for Linux: use command
+sudo apt update && sudo apt install git
+for Mac:
+brew install git
+
+Step 2: # This is one-time setup
+
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+Step 3:
+
+For Window in cmd prompt
+
+mkdir my-project
+cd my-project
+
+Step 4:
+
+git init 
+
+echo "# My First Git Project" > README.md
+
+Step 5:
+git add .
+
+or 
+
+git add README.md 
+
+git status # the file should be added and file name should turn to green color
+
+Step 6:
+
+git commit -m "Initial commit"
+
+Step 7:
+
+Create a GitHub Repository
+Go to GitHub → New Repository → Name it → Click Create.
+
+Copy the remote URL (HTTPS or SSH).
+
+Syep 8:
+
+git remote add origin https://github.com/username/repository.git
+
+Step 9: 
+
+git push -u origin main
+
+if we get the error like error: src refspec main does not match any
+it mean our local git default branch name is master but in remore we have main 
+we need to rename the master branch to main
+
+Step 10:
+
+git branch -M main
+
+step 11: after rename done we can push the code back to main branch
+
+git push -u origin main
+
