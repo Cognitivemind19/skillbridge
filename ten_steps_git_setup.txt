@@ -65,3 +65,6 @@ step 11: after rename done we can push the code back to main branch
 
 git push -u origin main
 
+
+************************************************new command added to this list*******************************************************
+
